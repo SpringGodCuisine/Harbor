@@ -1,4 +1,6 @@
+#include "hbpch.h"
 #include "Application.h"
+
 
 #include "Harbor/Events/ApplicationEvent.h"
 #include "Harbor/Log.h"

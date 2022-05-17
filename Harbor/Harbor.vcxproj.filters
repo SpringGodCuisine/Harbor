@@ -19,11 +19,11 @@
     <ClInclude Include="src\Harbor\EntryPoint.h">
       <Filter>Harbor</Filter>
     </ClInclude>
-    <ClInclude Include="src\Harbor\Events\Event.h">
+    <ClInclude Include="src\Harbor\Events\ApplicationEvent.h">
       <Filter>Harbor\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Harbor\Log.h">
-      <Filter>Harbor</Filter>
+    <ClInclude Include="src\Harbor\Events\Event.h">
+      <Filter>Harbor\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Harbor\Events\KeyEvent.h">
       <Filter>Harbor\Events</Filter>
@@ -31,9 +31,10 @@
     <ClInclude Include="src\Harbor\Events\MouseEvent.h">
       <Filter>Harbor\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Harbor\Events\ApplicationEvent.h">
-      <Filter>Harbor\Events</Filter>
+    <ClInclude Include="src\Harbor\Log.h">
+      <Filter>Harbor</Filter>
     </ClInclude>
+    <ClInclude Include="src\hbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Harbor\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Harbor\Log.cpp">
       <Filter>Harbor</Filter>
     </ClCompile>
+    <ClCompile Include="src\hbpch.cpp" />
   </ItemGroup>
 </Project>

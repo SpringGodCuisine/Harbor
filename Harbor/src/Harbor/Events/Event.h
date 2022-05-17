@@ -1,10 +1,6 @@
 #pragma once
 
-
 #include "Harbor/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Harbor {
 

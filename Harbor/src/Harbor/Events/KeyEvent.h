@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Harbor {
 
 	class HARBOR_API KeyEvent :public Event
