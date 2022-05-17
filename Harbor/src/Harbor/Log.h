@@ -3,7 +3,7 @@
 #include <memory>
 #include "Core.h"
 #include "Spdlog/spdlog.h"
-#include "Spdlog/sinks//stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Harbor {
 

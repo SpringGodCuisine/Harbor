@@ -10,3 +10,4 @@
 	#error Harbor Only Support Windows!
 #endif // HB_PLATFROM_WINDOWS
 
+#define BIT(x) (1 << x)
