@@ -1,3 +1,6 @@
 [submodule "Harbor/vendor/spdlog"]
 	path = Harbor/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Harbor/vendor/GLFW"]
+	path = Harbor/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

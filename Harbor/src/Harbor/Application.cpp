@@ -8,6 +8,7 @@
 namespace Harbor {
 	Application::Application()
 	{
+		HB_INFO("你好世界{0}，世界你好");
 	}
 
 	Application::~Application()

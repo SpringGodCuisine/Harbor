@@ -10,6 +10,12 @@ workspace "Harbor"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Harbor/vendor/GLFW/include"
+
+include "Harbor/vendor/GLFW"
+
 project "Harbor"
 	location "Harbor"
 	kind "SharedLib"
@@ -31,6 +37,13 @@ project "Harbor"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 
