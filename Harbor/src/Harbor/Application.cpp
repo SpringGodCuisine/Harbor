@@ -5,10 +5,12 @@
 #include "Harbor/Events/ApplicationEvent.h"
 #include "Harbor/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Harbor {
 	Application::Application()
 	{
-		HB_INFO("你好世界{0}，世界你好");
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,17 +19,12 @@ namespace Harbor {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1920, 1080);
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			HB_INFO(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			HB_INFO(e);
-		}
-
-		while (true);
 	}
 }
 

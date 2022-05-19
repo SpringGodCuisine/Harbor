@@ -1,5 +1,6 @@
 #pragma once
 
+#include "hbpch.h"
 #include "Harbor/Core.h"
 
 namespace Harbor {

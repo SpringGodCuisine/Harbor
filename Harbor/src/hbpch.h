@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Harbor/Log.h"
 
 #ifdef HB_PLATFROM_WINDOWS
 	#include <Windows.h>

@@ -35,6 +35,8 @@
       <Filter>Harbor</Filter>
     </ClInclude>
     <ClInclude Include="src\hbpch.h" />
+    <ClInclude Include="src\Harbor\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Harbor\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Harbor</Filter>
     </ClCompile>
     <ClCompile Include="src\hbpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

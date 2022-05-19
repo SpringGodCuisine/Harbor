@@ -1,7 +1,11 @@
 #pragma once
+
 #include "Core.h"
+#include "Events/Event.h"
+#include "Window.h"
 
 namespace Harbor {
+
 	class HARBOR_API Application
 	{
 	public:
@@ -9,8 +13,11 @@ namespace Harbor {
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<Window> m_Window;
+		bool m_Running = true;
 	};
-
+	
 	//To be define in CLIENT
 	Application* CreateApplication();
 }

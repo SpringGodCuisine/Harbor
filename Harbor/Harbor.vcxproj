@@ -146,11 +146,14 @@
     <ClInclude Include="src\Harbor\Events\KeyEvent.h" />
     <ClInclude Include="src\Harbor\Events\MouseEvent.h" />
     <ClInclude Include="src\Harbor\Log.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Harbor\Window.h" />
     <ClInclude Include="src\hbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Harbor\Application.cpp" />
     <ClCompile Include="src\Harbor\Log.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\hbpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
