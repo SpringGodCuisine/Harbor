@@ -7,6 +7,12 @@
     <Filter Include="Harbor\Events">
       <UniqueIdentifier>{4720FCBD-B3E0-77F4-7C1B-C171E89ABCD0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Harbor.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\Harbor\Events\MouseEvent.h">
       <Filter>Harbor\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Harbor\Layer.h">
+      <Filter>Harbor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Harbor\LayerStack.h">
+      <Filter>Harbor</Filter>
+    </ClInclude>
     <ClInclude Include="src\Harbor\Log.h">
       <Filter>Harbor</Filter>
     </ClInclude>
+    <ClInclude Include="src\Harbor\Window.h">
+      <Filter>Harbor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\hbpch.h" />
-    <ClInclude Include="src\Harbor\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Harbor\Application.cpp">
       <Filter>Harbor</Filter>
     </ClCompile>
+    <ClCompile Include="src\Harbor\Layer.cpp">
+      <Filter>Harbor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Harbor\LayerStack.cpp">
+      <Filter>Harbor</Filter>
+    </ClCompile>
     <ClCompile Include="src\Harbor\Log.cpp">
       <Filter>Harbor</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\hbpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

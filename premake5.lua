@@ -66,16 +66,18 @@ project "Harbor"
 
 	filter "configurations:Debug"
 		defines "HB_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Debug"
 		defines "HB_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Debug"
 		defines "HB_DIST"
+		buildoptions "/MD"
 		symbols "On"
-
 
 
 project "Sandbox"
@@ -116,13 +118,16 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "HB_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Debug"
 		defines "HB_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Debug"
 		defines "HB_DIST"
+		buildoptions "/MD"
 		symbols "On"
 

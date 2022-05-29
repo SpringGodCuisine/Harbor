@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd /MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -145,13 +146,17 @@
     <ClInclude Include="src\Harbor\Events\Event.h" />
     <ClInclude Include="src\Harbor\Events\KeyEvent.h" />
     <ClInclude Include="src\Harbor\Events\MouseEvent.h" />
+    <ClInclude Include="src\Harbor\Layer.h" />
+    <ClInclude Include="src\Harbor\LayerStack.h" />
     <ClInclude Include="src\Harbor\Log.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Harbor\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\hbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Harbor\Application.cpp" />
+    <ClCompile Include="src\Harbor\Layer.cpp" />
+    <ClCompile Include="src\Harbor\LayerStack.cpp" />
     <ClCompile Include="src\Harbor\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\hbpch.cpp">
